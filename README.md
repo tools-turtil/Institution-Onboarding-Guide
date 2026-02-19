@@ -28,15 +28,15 @@ Provide your institution's basic information and address details.
 | Column | Required | Max Length | Description | Example |
 |--------|----------|------------|-------------|---------|
 | Institution Name | Yes | 255 characters | Full name of your institution | Your Institution Name |
-| Institution Code | No | 50 characters | Short unique identifier | INST001 |
+| Institution Code | Yes | 50 characters | Short unique identifier | INST001 |
 | Institution Type | Yes | - | Type of institution | College / School |
-| Phone Number | No | 20 characters | Contact phone with country code | +91 9876543210 |
-| Website | No | - | Institution website URL | www.example.edu.in |
-| Street Address | No | 200 characters | Building/Plot address | 123, Main Road |
-| City | No | 100 characters | City name | Your City |
-| State / Province | No | 100 characters | State or province | Your State |
-| Country | No | 100 characters | Country name | India |
-| Postal Code | No | 20 characters | PIN/ZIP code | 123456 |
+| Phone Number | Yes | 20 characters | Contact phone with country code | +91 9876543210 |
+| Website | Yes | - | Institution website URL | www.example.edu.in |
+| Street Address | Yes | 200 characters | Building/Plot address | 123, Main Road |
+| City | Yes | 100 characters | City name | Your City |
+| State / Province | Yes | 100 characters | State or province | Your State |
+| Country | Yes | 100 characters | Country name | India |
+| Postal Code | Yes | 20 characters | PIN/ZIP code | 123456 |
 
 ### Institution Type Values
 
@@ -64,8 +64,8 @@ Bulk invite staff members (teaching and non-teaching) to your institution.
 |--------|----------|-------------|---------|
 | Employee Name | Yes | Full name of the employee | John Doe |
 | Email ID | Yes | Official email (institution/university emails only) | john.doe@institution.edu |
-| Phone Number | No | 10 digits (no country code) | 9876543210 |
-| Employee ID | No | Unique employee identifier (cannot be changed once set) | EMP001 |
+| Phone Number | Yes | 10 digits (no country code) | 9876543210 |
+| Employee ID | Yes | Unique employee identifier (cannot be changed once set) | EMP001 |
 | Account Level | Yes | Access level | Staff |
 | Department | Yes | Department name | Computer Science |
 | Employee Category | Yes | Category of employment | Teaching / Non-Teaching |
@@ -260,8 +260,8 @@ Create separate Excel files for each section.
 |--------|----------|--------|-------------|---------|
 | Student Name | Yes | Text | Full name of the student | John Doe |
 | Student Email | Yes | Valid email | Student's email address | john@school.edu |
-| Student Phone | No | 10 digits (no country code) | Student's mobile number | 9876543210 |
-| Student ID | No | Text | Roll number or admission ID | STU2024001 |
+| Student Phone | Yes | 10 digits (no country code) | Student's mobile number | 9876543210 |
+| Student ID | Yes | Text | Roll number or admission ID | STU2024001 |
 | Parent Name | Yes | Text | Parent/Guardian full name | Richard Doe |
 | Parent Phone | Yes | 10 digits (no country code) | Parent's mobile number | 9876543200 |
 | Parent Relation | Yes | Enum (see below) | Relationship to student | Father |
