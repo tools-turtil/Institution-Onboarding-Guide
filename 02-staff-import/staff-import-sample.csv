@@ -1,0 +1,5 @@
+Employee Name,Email ID,Phone Number,Employee ID,Account Level,Department,Employee Category,Designation
+John Doe,john.doe@institution.edu,9876543210,EMP001,Admin,Administration,Non-Teaching,Principal
+Jane Smith,jane.smith@institution.edu,9876543211,EMP002,Head of Department,Computer Science,Teaching,HOD
+Robert Wilson,robert.wilson@institution.edu,9876543212,EMP003,Staff,Computer Science,Teaching,Assistant Professor
+Mary Johnson,mary.johnson@institution.edu,9876543213,EMP004,Staff,Mathematics,Teaching,Lecturer

@@ -1,6 +1,6 @@
 # Institution Onboarding Guide
 
-This guide helps institutions prepare Excel files for bulk imports into Turtil CMS. All imports support `.xlsx` and `.xls` formats.
+This guide helps institutions prepare files for bulk imports into Turtil CMS. All imports support `.csv`, `.xlsx`, and `.xls` formats.
 
 ---
 
@@ -12,7 +12,8 @@ This guide helps institutions prepare Excel files for bulk imports into Turtil C
 4. [Subjects Import](#4-subjects-import)
 5. [Subject-Staff Mapping (manual)](#5-subject-staff-mapping)
 6. [Student Import](#6-student-import)
-7. [Custom Requirements (optional)](#7-custom-requirements)
+7. [Departments Import](#7-departments-import)
+8. [Custom Requirements (optional)](#8-custom-requirements)
 
 ---
 
@@ -22,7 +23,7 @@ Provide your institution's basic information and address details.
 
 ### Sample File
 
-[institution-details-sample.xlsx](./01-institution-details/institution-details-sample.xlsx)
+[institution-details-sample.csv](./01-institution-details/institution-details-sample.csv)
 
 ### Column Reference
 
@@ -57,7 +58,7 @@ Bulk invite staff members (teaching and non-teaching) to your institution.
 
 ### Sample File
 
-[staff-import-sample.xlsx](./02-staff-import/staff-import-sample.xlsx)
+[staff-import-sample.csv](./02-staff-import/staff-import-sample.csv)
 
 ### Column Reference
 
@@ -105,10 +106,10 @@ Import your institution's hierarchy (departments, programs, years, sections, etc
 
 | Institution Type | Sample File |
 |-----------------|-------------|
-| School (K-12) | [school-structure-sample.xlsx](./03-academic-structure/school-structure-sample.xlsx) |
-| Engineering College | [engineering-college-sample.xlsx](./03-academic-structure/engineering-college-sample.xlsx) |
-| Arts & Science College | [arts-science-college-sample.xlsx](./03-academic-structure/arts-science-college-sample.xlsx) |
-| Pharmacy College | [pharmacy-college-sample.xlsx](./03-academic-structure/pharmacy-college-sample.xlsx) |
+| School (K-12) | [school-structure-sample.csv](./03-academic-structure/school-structure-sample.csv) |
+| Engineering College | [engineering-college-sample.csv](./03-academic-structure/engineering-college-sample.csv) |
+| Arts & Science College | [arts-science-college-sample.csv](./03-academic-structure/arts-science-college-sample.csv) |
+| Pharmacy College | [pharmacy-college-sample.csv](./03-academic-structure/pharmacy-college-sample.csv) |
 
 ### Column Structure by Institution Type
 
@@ -174,7 +175,7 @@ Add subjects in bulk to any academic node.
 
 ### Sample File
 
-[subjects-import-sample.xlsx](./04-subjects-import/subjects-import-sample.xlsx)
+[subjects-import-sample.csv](./04-subjects-import/subjects-import-sample.csv)
 
 ### Column Reference
 
@@ -204,7 +205,7 @@ Link subjects to academic structure and assign staff members to teach each subje
 
 ### Sample File
 
-[subject-staff-mapping-sample.xlsx](./05-subject-staff-mapping/subject-staff-mapping-sample.xlsx)
+[subject-staff-mapping-sample.csv](./05-subject-staff-mapping/subject-staff-mapping-sample.csv)
 
 ### Column Reference
 
@@ -242,9 +243,9 @@ Bulk invite students along with their parent/guardian details. Each Excel file c
 
 Name your Excel file based on the target section path:
 
-**Format**: `Academic Year-Year-Semester-Section.xlsx`
+**Format**: `Academic Year-Year-Semester-Section.csv`
 
-**Example**: `2025-2026-First Year-Semester 2-Section A.xlsx`
+**Example**: `2025-2026-First Year-Semester 2-Section A.csv`
 
 | Level | Value |
 |-------|-------|
@@ -253,11 +254,11 @@ Name your Excel file based on the target section path:
 | Semester | Semester 2 |
 | Section | Section A |
 
-Create separate Excel files for each section.
+Create separate files for each section.
 
 ### Sample File
 
-[student_import_sample.xlsx](./06-student-import/student_import_sample.xlsx)
+[student_import_sample.csv](./06-student-import/student_import_sample.csv)
 
 ### Column Reference
 
@@ -292,17 +293,43 @@ Only the following values are accepted (case-sensitive):
 
 - **Maximum file size**: 30 MB
 - **Maximum rows**: 1,000 students per import
-- **One section per file**: Create separate Excel files for each section
+- **One section per file**: Create separate files for each section
 
 ---
 
-## 7. Custom Requirements (optional)
+## 7. Departments Import
+
+Bulk import departments for your institution.
+
+### Sample File
+
+[departments-import-sample.csv](./07-departments-import/departments-import-sample.csv)
+
+### Column Reference
+
+| Column | Required | Max Length | Description | Example |
+|--------|----------|------------|-------------|---------|
+| Department Name | Yes | 60 characters | Full name of the department | Computer Science |
+| Department Code | Yes | 20 characters | Unique identifier for the department | CS |
+
+### Validation Rules
+
+1. **Department Name**: Cannot be empty
+2. **Department Code**: Must be unique across all departments
+
+### Constraints
+
+- **Maximum file size**: 10 MB
+
+---
+
+## 8. Custom Requirements (optional)
 
 Submit any extra modules or custom features you'd like implemented for your institution.
 
 ### Sample File
 
-[custom-requirements-template.xlsx](./07-custom-requirements/custom-requirements-template.xlsx)
+[custom-requirements-template.csv](./08-custom-requirements/custom-requirements-template.csv)
 
 ### Column Reference
 
