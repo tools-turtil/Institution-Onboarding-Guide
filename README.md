@@ -12,6 +12,7 @@ This guide helps institutions prepare Excel files for bulk imports into Turtil C
 4. [Subjects Import](#4-subjects-import)
 5. [Subject-Staff Mapping (manual)](#5-subject-staff-mapping)
 6. [Student Import](#6-student-import)
+7. [Custom Requirements (optional)](#7-custom-requirements)
 
 ---
 
@@ -21,7 +22,7 @@ Provide your institution's basic information and address details.
 
 ### Sample File
 
-[institution-details-sample.xlsx](./institution-details-sample.xlsx)
+[institution-details-sample.xlsx](./01-institution-details/institution-details-sample.xlsx)
 
 ### Column Reference
 
@@ -56,7 +57,7 @@ Bulk invite staff members (teaching and non-teaching) to your institution.
 
 ### Sample File
 
-[staff-import-sample.xlsx](./staff-import-sample.xlsx)
+[staff-import-sample.xlsx](./02-staff-import/staff-import-sample.xlsx)
 
 ### Column Reference
 
@@ -104,10 +105,10 @@ Import your institution's hierarchy (departments, programs, years, sections, etc
 
 | Institution Type | Sample File |
 |-----------------|-------------|
-| School (K-12) | [school-structure-sample.xlsx](./school-structure-sample.xlsx) |
-| Engineering College | [engineering-college-sample.xlsx](./engineering-college-sample.xlsx) |
-| Arts & Science College | [arts-science-college-sample.xlsx](./arts-science-college-sample.xlsx) |
-| Pharmacy College | [pharmacy-college-sample.xlsx](./pharmacy-college-sample.xlsx) |
+| School (K-12) | [school-structure-sample.xlsx](./03-academic-structure/school-structure-sample.xlsx) |
+| Engineering College | [engineering-college-sample.xlsx](./03-academic-structure/engineering-college-sample.xlsx) |
+| Arts & Science College | [arts-science-college-sample.xlsx](./03-academic-structure/arts-science-college-sample.xlsx) |
+| Pharmacy College | [pharmacy-college-sample.xlsx](./03-academic-structure/pharmacy-college-sample.xlsx) |
 
 ### Column Structure by Institution Type
 
@@ -171,6 +172,10 @@ The column structure depends on your institution type. Each row represents a lea
 
 Add subjects in bulk to any academic node.
 
+### Sample File
+
+[subjects-import-sample.xlsx](./04-subjects-import/subjects-import-sample.xlsx)
+
 ### Column Reference
 
 | Column | Required | Max Length | Description | Example |
@@ -199,7 +204,7 @@ Link subjects to academic structure and assign staff members to teach each subje
 
 ### Sample File
 
-[subject-staff-mapping-sample.xlsx](./subject-staff-mapping-sample.xlsx)
+[subject-staff-mapping-sample.xlsx](./05-subject-staff-mapping/subject-staff-mapping-sample.xlsx)
 
 ### Column Reference
 
@@ -252,7 +257,7 @@ Create separate Excel files for each section.
 
 ### Sample File
 
-[student_import_sample.xlsx](./student_import_sample.xlsx)
+[student_import_sample.xlsx](./06-student-import/student_import_sample.xlsx)
 
 ### Column Reference
 
@@ -288,3 +293,27 @@ Only the following values are accepted (case-sensitive):
 - **Maximum file size**: 30 MB
 - **Maximum rows**: 1,000 students per import
 - **One section per file**: Create separate Excel files for each section
+
+---
+
+## 7. Custom Requirements (optional)
+
+Submit any extra modules or custom features you'd like implemented for your institution.
+
+### Sample File
+
+[custom-requirements-template.xlsx](./07-custom-requirements/custom-requirements-template.xlsx)
+
+### Column Reference
+
+| Column | Required | Description | Example |
+|--------|----------|-------------|---------|
+| Module Name | Yes | Name of the module/feature you want | Student Bus Transport Tracking |
+| Module Description | Yes | Detailed explanation of what the module should do | Track student bus routes, pickup/drop times, and real-time location |
+| Resources / References | No | Links, documents, or references for context | |
+
+### Notes
+
+- Use this template to request additional functionality not covered by standard imports
+- Provide as much detail as possible in the Module Description
+- Include any reference materials (API docs, screenshots, examples) in the Resources column
